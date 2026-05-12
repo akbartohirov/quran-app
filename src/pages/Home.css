@@ -1,0 +1,271 @@
+.home {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-4);
+  padding-bottom: calc(var(--bottom-nav-height) + var(--space-5));
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+/* Header */
+.home__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.home__greeting {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: 2px;
+}
+
+.home__title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.home__streak {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: color-mix(in srgb, var(--color-warning) 10%, var(--color-bg));
+  border: 1px solid color-mix(in srgb, var(--color-warning) 30%, transparent);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-4);
+}
+
+.home__streak-fire { font-size: 1.25rem; }
+.home__streak-count { font-size: 1.5rem; font-weight: 800; color: var(--color-warning); line-height: 1; }
+.home__streak-label { font-size: 10px; color: var(--color-text-muted); text-align: center; margin-top: 2px; }
+
+/* Continue reading */
+.home__continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  background: var(--color-primary);
+  border-radius: var(--radius-md);
+  color: white;
+  text-align: left;
+  transition: opacity var(--transition);
+  width: 100%;
+}
+
+.home__continue:hover { opacity: 0.9; }
+
+.home__continue-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.home__continue-label {
+  font-size: var(--font-size-xs);
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.home__continue-surah {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+}
+
+.home__continue-ayah {
+  font-size: var(--font-size-xs);
+  opacity: 0.75;
+  font-family: var(--font-arabic);
+}
+
+.home__continue-arrow { font-size: 1.5rem; opacity: 0.8; }
+
+/* Daily goal */
+.home__goal {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.home__goal-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3);
+}
+
+.home__section-label {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.home__goal-count {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.home__goal-bar {
+  height: 8px;
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.home__goal-fill {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease;
+}
+
+.home__goal-done {
+  margin-top: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-success);
+  font-weight: 500;
+}
+
+/* Daily ayah */
+.home__daily-ayah {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.home__daily-ayah-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home__daily-ayah-goto {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.home__ayah-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.home__ayah-arabic {
+  font-family: var(--font-arabic);
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: right;
+  color: var(--color-arabic);
+  margin-bottom: var(--space-3);
+}
+
+.home__ayah-translation {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: var(--space-2);
+}
+
+.home__ayah-ref {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Quick nav */
+.home__quick-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2);
+}
+
+.quick-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-3) var(--space-2);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  transition: all var(--transition);
+}
+
+.quick-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.quick-btn__icon { font-size: 1.25rem; }
+
+/* Bookmarks */
+.home__bookmarks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.home__bookmarks-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.home__bookmark-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--font-size-sm);
+  transition: background var(--transition);
+}
+
+.home__bookmark-item:last-child { border-bottom: none; }
+.home__bookmark-item:hover { background: var(--color-bg); }
+
+.home__bookmark-ref { font-weight: 600; color: var(--color-primary); }
+.home__bookmark-arrow { color: var(--color-text-muted); }
+
+/* Tafsir notice (o'zbek tilida tafsir yo'qligi haqida xabar) */
+.home__notice {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: color-mix(in srgb, var(--color-primary) 8%, var(--color-bg));
+  border: 1px solid color-mix(in srgb, var(--color-primary) 25%, transparent);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+.home__notice-icon { flex-shrink: 0; }
+
+/* Skeleton */
+.skeleton {
+  background: linear-gradient(90deg, var(--color-surface) 25%, var(--color-border) 50%, var(--color-surface) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-md);
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

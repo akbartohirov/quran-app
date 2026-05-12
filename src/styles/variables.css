@@ -1,0 +1,94 @@
+:root {
+  /* Primary */
+  --color-primary: #2D6A4F;
+  --color-primary-light: #52B788;
+  --color-primary-dark: #1B4332;
+
+  /* Neutral */
+  --color-bg: #FFFFFF;
+  --color-surface: #F8F9FA;
+  --color-border: #E9ECEF;
+  --color-text: #212529;
+  --color-text-muted: #6C757D;
+
+  /* Arabic */
+  --color-arabic: #1A1A2E;
+
+  /* Tajweed */
+  --tajweed-ghunnah: #C23B22;
+  --tajweed-ikhfa: #169B6B;
+  --tajweed-idgham: #7C3AED;
+  --tajweed-qalqala: #D97706;
+  --tajweed-madd: #0369A1;
+
+  /* Status */
+  --color-success: #2D6A4F;
+  --color-warning: #D97706;
+  --color-error: #DC2626;
+
+  /* Typography - UI */
+  --font-ui: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+
+  /* Typography - Arabic */
+  --font-arabic: 'KFGQPC Uthmanic Script', 'Scheherazade New', 'Amiri', serif;
+  --font-arabic-uthmani: 'KFGQPC Uthmanic Script', 'Scheherazade New', 'Amiri', serif;
+  --font-arabic-imlaei: 'Amiri', 'Traditional Arabic', serif;
+  --font-arabic-indopak: 'Lateef', 'Noto Naskh Arabic', serif;
+  --font-arabic-size: 2rem;
+
+  /* Sidebar */
+  --sidebar-width: 220px;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+
+  /* Transitions */
+  --transition: 0.2s ease;
+
+  /* Layout */
+  --bottom-nav-height: 64px;
+  --header-height: 56px;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --color-bg: #0F172A;
+  --color-surface: #1E293B;
+  --color-border: #334155;
+  --color-text: #F1F5F9;
+  --color-text-muted: #94A3B8;
+  --color-arabic: #E2E8F0;
+}
+
+/* Sepia theme */
+[data-theme="sepia"] {
+  --color-bg: #F5F0E8;
+  --color-surface: #EDE8DC;
+  --color-border: #D4C9B0;
+  --color-text: #3D2B1F;
+  --color-text-muted: #7A6652;
+  --color-arabic: #2C1810;
+}

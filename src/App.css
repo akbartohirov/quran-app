@@ -1,0 +1,29 @@
+.app {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__main {
+  flex: 1;
+  padding-bottom: var(--bottom-nav-height);
+}
+
+.page {
+  padding: var(--space-4);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .app {
+    flex-direction: row;
+  }
+
+  .app__main {
+    margin-left: var(--sidebar-width);
+    padding-bottom: 0;
+    flex: 1;
+    min-width: 0;
+  }
+}
