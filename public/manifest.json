@@ -2,7 +2,7 @@
   "name": "Qur'on - Quran App",
   "short_name": "Qur'on",
   "description": "Shaxsiy foydalanish uchun Qur'on ilovasi — o'qish, tinglash, hifz",
-  "start_url": "/quran-app/",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
